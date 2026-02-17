@@ -3,17 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To-Do List with priorities</title>
+    <title>To-Do List with Priorities</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h2>To-Do List</h2>
+
     <input type="text" id="taskInput" placeholder="Enter a task" />
+
     <select id="prioritySelect">
       <option value="low">Low</option>
       <option value="medium">Medium</option>
       <option value="high">High</option>
     </select>
+
     <button id="addBtn">Add</button>
+
+    <select id="filterSelect">
+      <option value="all">All</option>
+      <option value="active">Active</option>
+      <option value="done">Completed</option>
+    </select>
+
+    <ul id="taskList"></ul>
+
+    <script src="app.js"></script>
   </body>
 </html>
+  
